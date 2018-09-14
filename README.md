@@ -12,3 +12,6 @@ Edit the body.php on line 18-21, input your rigs ip adresses.
 
 Connect the GPIO pins to some relays and connect the relays to short the power button on the motherboards.
 By default the controlling pins are 32, 35, 36, 40 by board pin numbering
+
+
+![alt text](https://raw.githubusercontent.com/iiKster/Remote-rig-restarting/edit/master/remoteRigRestart.PNG)
