@@ -14,4 +14,4 @@ Connect the GPIO pins to some relays and connect the relays to short the power b
 By default the controlling pins are 32, 35, 36, 40 by board pin numbering
 
 
-![alt text](https://raw.githubusercontent.com/iiKster/Remote-rig-restarting/edit/master/remoteRigRestart.PNG)
+![alt text](remoteRigRestart.PNG)
