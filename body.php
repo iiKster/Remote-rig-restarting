@@ -76,3 +76,22 @@ echo $color;
 echo "><p>";
 echo $status ;
 echo "</p></td><td><a href='?reboot=3'>Hard reboot</a></td></tr>";
+
+
+
+echo "  <tr><td><p>Rig 4</p></td><td><p> ";
+         echo $rig4;
+if ($rig4 > 10) {
+        $color="lime";
+        $status="OK!";
+        }
+else {
+        $color="red";
+        $status="FAIL!";
+        }
+echo "</p></td><td bgcolor=";
+echo $color;
+echo " ><p>";
+echo $status ;
+echo "</p></td><td><a href='?reboot=4'>Hard reboot</a></td></tr>";
+?>
