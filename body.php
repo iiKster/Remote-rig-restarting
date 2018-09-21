@@ -14,11 +14,13 @@
         echo "<meta http-equiv='refresh' content='0;url=index.php'>";
     }
 
+// The old shell_exec line
+// $rig1=shell_exec("curl -s  http://192.168.8.124:3333 | cut -d'<' -f1 | sed -n '2p'  | jq -rc  '.result ['2']' |  cut -d';' -f1");
 
-$rig1=shell_exec("curl -s  http://192.168.8.124:3333 | cut -d'<' -f1 | sed -n '2p'  | jq -rc  '.result ['2']' |  cut -d';' -f1");
-$rig2=shell_exec("curl -s  http://192.168.8.140:3333 | cut -d'<' -f1 | sed -n '2p'  | jq -rc  '.result ['2']' |  cut -d';' -f1");
-$rig3=shell_exec("curl -s  http://192.168.8.152:3333 | cut -d'<' -f1 | sed -n '2p'  | jq -rc  '.result ['2']' |  cut -d';' -f1");
-$rig4=shell_exec("curl -s  http://192.168.8.144:3333 | cut -d'<' -f1 | sed -n '2p'  | jq -rc  '.result ['2']' |  cut -d';' -f1");
+$rig1=shell_exec("curl -s  http://192.168.8.124:3333 | cut -d'<' -f1 | jq -rc  '.result ['2']' |  cut -d';' -f1");
+$rig2=shell_exec("curl -s  http://192.168.8.140:3333 | cut -d'<' -f1 | jq -rc  '.result ['2']' |  cut -d';' -f1");
+$rig3=shell_exec("curl -s  http://192.168.8.152:3333 | cut -d'<' -f1 | jq -rc  '.result ['2']' |  cut -d';' -f1");
+$rig4=shell_exec("curl -s  http://192.168.8.144:3333 | cut -d'<' -f1 | jq -rc  '.result ['2']' |  cut -d';' -f1");
 
 $color = "blue";        // Init color blue to see if it updates to red or green
 $status="";
